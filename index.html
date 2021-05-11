@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <div class="toolbar">
+            <a href="javascript:void(0)" onclick="format('bold')">
+                <span>b</span>
+            </a>
+            <a href="javascript:void(0)" onclick="format('italic')">
+                <span>i</span>
+            </a>
+            <a
+                href="javascript:void(0)"
+                onclick="format('insertunorderedlist')"
+            >
+                <span>List</span>
+            </a>
+            <a href="javascript:void(0)" onclick="save()">Save</a>
+            <input id="file" type="file" />
+        </div>
+
+        <div class="text-editor" id="sampleeditor" contenteditable></div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
